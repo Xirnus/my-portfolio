@@ -6,11 +6,10 @@ export default function App() {
   return (
     <main>
       <div>
-        <h1>My Developer Portfolio</h1>
+        <Hero/>
       </div>
-      <Hero/>
-      <Skills/>
       <Projects/>
+      <Skills/>
     </main>
   );
 }
