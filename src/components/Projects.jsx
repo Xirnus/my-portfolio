@@ -27,37 +27,35 @@ export default function Projects() {
   ];
 
   return (
-    <section className="max-w-6xl mx-auto p-6">
-      <h2 className="text-3xl font-bold mb-6">Projects</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <section id="work" className="work-section">
+      <div className="section-heading">
+        <div>
+          <p className="eyebrow">Selected work</p>
+          <h2>Things I&apos;ve made</h2>
+        </div>
+        <span className="project-count">03 / 03</span>
+      </div>
+      <div className="project-grid">
         {projects.map((project, index) => (
-          <div 
-            key={index} 
-            className="border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow bg-white flex flex-col justify-between"
-          >
-            <div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">{project.title}</h3>
-              <p className="text-gray-600 text-sm mb-4 leading-relaxed">{project.description}</p>
+          <article key={project.title} className="project-card">
+            <div className="project-topline">
+              <span>0{index + 1}</span>
+              <span>{project.category}</span>
             </div>
-
-            <div>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {project.tech.map((item, techIndex) => (
-                  <span 
-                    key={techIndex} 
-                    className="text-xs font-medium bg-gray-100 text-gray-700 px-2.5 py-1 rounded-md"
-                  >
-                    #{item}
-                  </span>
+            <div className="project-content">
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <div className="tech-list">
+                {project.tech.map((item) => (
+                  <span key={item}>#{item}</span>
                 ))}
               </div>
-
-              <div className="flex gap-4 pt-3 border-t border-gray-100 text-sm font-semibold">
-                <a href={project.github} className="text-blue-600 hover:underline">GitHub</a>
-                <a href={project.demo} className="text-blue-600 hover:underline">Live Demo</a>
-              </div>
             </div>
-          </div>
+            <div className="project-links">
+              <a href={project.github}>GitHub <span aria-hidden="true">↗</span></a>
+              <a href={project.demo}>Live demo <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
         ))}
       </div>
     </section>
