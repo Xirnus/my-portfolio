@@ -60,8 +60,8 @@ export default function Projects() {
               </div>
             </div>
             <div className="project-links">
-              <a href={project.github}>GitHub<span aria-hidden="true">↗</span></a>
-              <a href={project.demo}>Live demo<span aria-hidden="true">↗</span></a>
+              <a href={project.github} target="_blank">GitHub<span aria-hidden="true">↗</span></a>
+              <a href={project.demo} target="_blank">Live demo<span aria-hidden="true">↗</span></a>
             </div>
           </article>
         ))}
