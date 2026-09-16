@@ -29,7 +29,7 @@ a {
 }
 
 .site-shell {
-	width: min(1180px, 100%);
+	width: min(1250px, 100%);
 	margin: 0 auto;
 	padding: 0 48px;
 	overflow: hidden;
@@ -152,7 +152,7 @@ h2 em {
 }
 
 .hero-description {
-	max-width: 500px;
+	max-width: 550px;
 	margin-bottom: 34px;
 	color: #a3aaa4;
 	font-size: 16px;
@@ -212,7 +212,7 @@ h2 em {
 	position: absolute;
 	right: -2px;
 	bottom: 5px;
-	width: 235px;
+	width: 205px;
 	padding: 18px;
 	color: #111312;
 	background: #c7f06b;

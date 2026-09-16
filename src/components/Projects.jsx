@@ -23,6 +23,14 @@ export default function Projects() {
       description: 'Public internet hotspot solution designed for low-bandwidth environments.',
       github: '#',
       demo: '#'
+    },
+    {
+      title: 'SCI-HIGH Programming RPG',
+      category: 'capstone',
+      tech: ['HTML/CSS/JS', 'Python'],
+      description: 'Thesis project turning programming fundamentals into a fast-paced roguelike learning experience with adaptive quizzes, progress tracking, and achievements.',
+      github: 'https://github.com/jsnb21/SCI-HIGH_THESIS',
+      demo: 'https://jsnb21.github.io/SCI-HIGH_THESIS/'
     }
   ];
 
@@ -33,7 +41,7 @@ export default function Projects() {
           <p className="eyebrow">Selected work</p>
           <h2>Things I&apos;ve made</h2>
         </div>
-        <span className="project-count">03 / 03</span>
+        <span className="project-count">04 / 04</span>
       </div>
       <div className="project-grid">
         {projects.map((project, index) => (
@@ -52,8 +60,8 @@ export default function Projects() {
               </div>
             </div>
             <div className="project-links">
-              <a href={project.github}>GitHub <span aria-hidden="true">↗</span></a>
-              <a href={project.demo}>Live demo <span aria-hidden="true">↗</span></a>
+              <a href={project.github}>GitHub<span aria-hidden="true">↗</span></a>
+              <a href={project.demo}>Live demo<span aria-hidden="true">↗</span></a>
             </div>
           </article>
         ))}

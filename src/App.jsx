@@ -8,19 +8,19 @@ export default function App() {
       <header className="site-header">
         <a className="brand" href="#top" aria-label="James Verceles home">
           <span className="brand-mark">JV</span>
-          <span>James Verceles</span>
+          <span>James Edward Verceles</span>
         </a>
         <nav className="site-nav" aria-label="Main navigation">
           <a href="#work">Work</a>
           <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
         </nav>
-        <a className="header-cta" href="mailto:james.verceles@example.com">
+        <a className="header-cta" href="mailto:vercelesjames27@gmail.com">
           Let&apos;s talk <span aria-hidden="true">↗</span>
         </a>
       </header>
       <div id="top">
-        <Hero />
+      <Hero />
       </div>
       <Projects />
       <Skills />
@@ -29,8 +29,8 @@ export default function App() {
           <p className="eyebrow">Have a project in mind?</p>
           <h2>Let&apos;s build something useful.</h2>
         </div>
-        <a className="footer-link" href="mailto:james.verceles@example.com">
-          james.verceles@example.com <span aria-hidden="true">↗</span>
+        <a className="footer-link" href="mailto:vercelesjames27@gmail.com">
+          vercelesjames27@gmail.com<span aria-hidden="true">↗</span>
         </a>
       </footer>
     </main>
