@@ -1,5 +1,11 @@
 # React + Vite
 
+## Deploy to GitHub Pages
+
+1. Run `npm run deploy` to build the app and publish `dist` to the `gh-pages` branch.
+2. In GitHub, open **Settings > Pages** and set the source to **Deploy from a branch**, then choose `gh-pages` and `/ (root)`.
+3. The site will be available at `https://xirnus.github.io/my-portfolio/`.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
